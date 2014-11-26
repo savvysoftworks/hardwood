@@ -1,0 +1,17 @@
+Hi
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Email</th>
+  </tr>
+    <% @users.each do | user | %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.email %></td>
+      </tr>
+      <% end %>
+    </table>
+    <p>
+      <%= @savannah %>
+      <%= @users.inspect %>
+    </p>
